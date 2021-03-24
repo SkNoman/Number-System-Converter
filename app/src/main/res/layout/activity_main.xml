@@ -30,6 +30,7 @@
         android:layout_marginStart="117dp"
         android:layout_marginLeft="117dp"
         android:layout_marginTop="318dp"
+        android:inputType="numberPassword"
         android:hint="password:"
         android:textColorHint="#f4d03f" />
 
