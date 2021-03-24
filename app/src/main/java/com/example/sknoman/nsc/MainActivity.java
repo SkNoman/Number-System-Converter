@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
       });
     }
   public  void openActivity2() {
-      if (user.getText().toString().equals("noman") && password.getText().toString().equals("654321")) {
+      if (user.getText().toString().equals("user") && password.getText().toString().equals("123456")) {
           Intent intent = new Intent(this, Activity2.class);
           startActivity(intent);
           Toast.makeText(this, "Welcome Login Succesfull", Toast.LENGTH_SHORT).show();
