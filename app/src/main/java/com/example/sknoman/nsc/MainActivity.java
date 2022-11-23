@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
       });
     }
   public  void openActivity2() {
-      if (user.getText().toString().equals("Fardin") && password.getText().toString().equals("123456")) {
+      if (user.getText().toString().equals("Noman") && password.getText().toString().equals("123456")) {
           Intent intent = new Intent(this, Activity2.class);
           startActivity(intent);
           user.setText(null);
