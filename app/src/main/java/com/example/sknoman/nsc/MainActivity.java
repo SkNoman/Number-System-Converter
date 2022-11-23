@@ -1,7 +1,6 @@
 package com.example.sknoman.nsc;
 
 import android.content.Intent;
-import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -33,12 +32,13 @@ public class MainActivity extends AppCompatActivity {
       });
     }
   public  void openActivity2() {
-      if (user.getText().toString().equals("user") && password.getText().toString().equals("123456")) {
+      if (user.getText().toString().equals("Fardin") && password.getText().toString().equals("123456")) {
           Intent intent = new Intent(this, Activity2.class);
           startActivity(intent);
-          Toast.makeText(this, "Welcome Login Succesfull", Toast.LENGTH_SHORT).show();
+          user.setText(null);
+          Toast.makeText(this, "Welcome "+ user.getText(), Toast.LENGTH_SHORT).show();
       } else {
-          Toast.makeText(this, "Login Faild", Toast.LENGTH_SHORT).show();
+          Toast.makeText(this, "Login Failed, Please enter correct credentials!", Toast.LENGTH_SHORT).show();
       }
   }
 }

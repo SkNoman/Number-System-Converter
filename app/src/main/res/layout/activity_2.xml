@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
     tools:context=".Activity2"
     android:orientation="vertical"
-    android:background="#827"
+    android:background="@drawable/main_bg"
     >
 
     <Button
@@ -16,6 +17,7 @@
         android:textColor="#FFFF"
         android:textAllCaps="false"
         android:textSize="25sp"
+        android:visibility="invisible"
         android:text="Select Any Number For Convert"
 
         />
@@ -24,8 +26,8 @@
         android:id="@+id/B1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="70dp"
-        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
         android:background="@drawable/button_background"
         android:text="Decimal"
         android:textColor=" #FFFFFF"
@@ -37,7 +39,7 @@
         android:id="@+id/B2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="70dp"
+        android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:text="Binary"
         android:background="@drawable/button_background"
@@ -50,7 +52,7 @@
         android:id="@+id/B3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="70dp"
+        android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:background="@drawable/button_background"
         android:textStyle="bold"
@@ -63,8 +65,7 @@
         android:id="@+id/B4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="70dp"
-        android:layout_centerInParent="true"
+        android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:text="Hexadecimal"
         android:textStyle="bold"

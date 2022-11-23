@@ -1,24 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Activity6">
 
     <EditText
         android:id="@+id/eeee4"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-
-
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="101dp"
-        android:layout_marginEnd="35dp"
-        android:layout_marginRight="35dp"
-        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
         android:hint="Hexadecimal Number"
         android:textColorHint="#64ff33" />
 
@@ -26,12 +20,8 @@
         android:id="@+id/bbbb4"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/eeee4"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="62dp"
-        android:layout_marginEnd="37dp"
-        android:layout_marginRight="37dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
         android:text="Convert"
         android:textColor=" #f4d03f"
         android:background="#17a589 "
@@ -41,32 +31,11 @@
         android:id="@+id/tttt4"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/bbbb4"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginStart="75dp"
-
-        android:layout_marginLeft="75dp"
-        android:layout_marginTop="47dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
         android:gravity="center"
         android:text="  "
-        android:textColor="#000" />
-    <Button
-        android:layout_width="20dp"
-        android:layout_height="match_parent"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:background="#64ff33"
-        android:id="@+id/bl2"
-        android:layout_marginTop="58dp" />
+        android:textColor="#000"  />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:layout_above="@+id/bl2"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="0dp"
-        android:background="#64ff33"
-        android:layout_marginBottom="-58dp" />
 
-</RelativeLayout>
+</LinearLayout>

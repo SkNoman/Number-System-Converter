@@ -1,64 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:background="#FFFFFF"
+    android:orientation="vertical"
     >
     <ImageButton
         android:layout_width="90dp"
         android:layout_height="90dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="170dp"
-        android:layout_marginLeft="170dp"
-        android:layout_marginTop="103dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:contentDescription="@string/todo"
         android:background="@drawable/images" />
 
-
+    <EditText
+        android:id="@+id/E1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:hint="username:"
+        android:textColorHint="#f4d03f" />
     <EditText
         android:id="@+id/E2"
-        android:layout_width="200dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/E1"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="117dp"
-        android:layout_marginLeft="117dp"
-        android:layout_marginTop="318dp"
+        android:layout_margin="20dp"
         android:inputType="numberPassword"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
         android:hint="password:"
         android:textColorHint="#f4d03f" />
 
 
 
-    <EditText
-        android:id="@+id/E1"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="114dp"
-        android:layout_marginLeft="114dp"
-        android:layout_marginTop="227dp"
-        android:hint="username:"
-        android:textColorHint="#f4d03f" />
+
 
     <Button
         android:id="@+id/c1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/E2"
-        android:layout_marginTop="96dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+       android:layout_marginTop="20dp"
         android:background="@drawable/button_background"
         android:text="Login"
         android:textColor=" #f4d03f"
         android:textSize="30dp" />
 
 
-</RelativeLayout>
+</LinearLayout>
